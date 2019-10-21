@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks",
+  "name": "react-hooksp",
   "version": "1.0.0",
   "description": "from PS course https://github.com/pkellner/pluralsight-course-using-react-hooks",
   "main": "index.js",
@@ -12,8 +12,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^4.3.1",
     "next": "^9.1.1",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "react-toastify": "^5.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "react-hooks": "^1.0.1"
   }
 }

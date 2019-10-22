@@ -19,34 +19,7 @@ const Speakers = ({ }) => {
     const [speakingSaturday, setSpeakingSaturday] = useState(true);
     const [speakingSunday, setSpeakingSunday] = useState(true);
 
-    // const [speakerList, setSpeakerList] = useState([]);
-    // const [speakerList, dispatch] = useReducer(speakersReducer, []);
-
-    // const [isLoading, setIsLoading] = useState(true);
-
     const context = useContext(ConfigContext);
-
-    // useEffect(() => {
-    //     setIsLoading(true);
-    //     new Promise(function (resolve) {
-    //         setTimeout(function () {
-    //             resolve();
-    //         }, 1000);
-    //     }).then(() => {
-    //         setIsLoading(false);
-    //         const speakerListServerFilter = SpeakerData.filter(({ sat, sun }) => {
-    //             return (speakingSaturday && sat) || (speakingSunday && sun);
-    //         });
-    //         // setSpeakerList(speakerListServerFilter);
-    //         dispatch({
-    //             type: 'setSpeakerList',
-    //             data: speakerListServerFilter
-    //         })
-    //     });
-    //     return () => {
-    //         console.log("cleanup");
-    //     };
-    // }, []); // [speakingSunday, speakingSaturday]);
 
     const handleChangeSaturday = () => {
         setSpeakingSaturday(!speakingSaturday);
@@ -92,10 +65,6 @@ const Speakers = ({ }) => {
                 console.log(error);
             });
         const sessionId = parseInt(e.target.attributes["data-sessionid"].value);
-        // dispatch({
-        //     type: favoriteValue === true ? 'favorite' : 'unfavorite',
-        //     sessionId 
-        // });
     }, []);
 
     if (isLoading) return <div>Loading...</div>;
